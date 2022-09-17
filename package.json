@@ -1,0 +1,22 @@
+{
+  "name": "wzpdcl",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "scss":"node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AmritoBiswas/Wzpdcl.git"
+  },
+  "author": "Amrito",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AmritoBiswas/Wzpdcl/issues"
+  },
+  "homepage": "https://github.com/AmritoBiswas/Wzpdcl#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.3"
+  }
+}
