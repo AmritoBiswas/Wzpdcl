@@ -25,6 +25,68 @@ body{
     background-position: center center;
     background-size: cover;
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    position: relative;
+    color: #fff;
+}
+
+.header-text   {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.header-text-main{
+    text-transform: uppercase;
+    font-size: 65px;
+    letter-spacing: 35px;
+    display: block;
+    font-weight: 400;
+    animation: moveLeft 1s ease-out;
+
+}
+.header-text-sub{
+    text-transform: uppercase;
+    font-size: 35px;
+    letter-spacing:20px;
+    font-weight: 400;
+    display: block;
+    animation: moveRight 1s ease-out;
+}
+.logo-box{
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+.logo{
+    height: 45px;
+}
+
+@keyframes moveLeft{
+    0%{
+        opacity: 0;
+        transform:translateX(-120px);
+    }
+    80%{
+        transform:translateX(10px)
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0)
+    }
+}
+
+@keyframes moveRight{
+    0%{
+        opacity: 0;
+        transform:translateX(120px);
+    }
+    80%{
+        transform:translateX(-10px)
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0)
+    }
 }
 
 
