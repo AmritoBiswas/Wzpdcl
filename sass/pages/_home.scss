@@ -3,3 +3,19 @@
     padding: 25rem 0;
     margin-top: -20vh;
 }
+
+.section-feture{
+    background-image:linear-gradient(to right,rgba($primary-blue-light, 0.8),rgba($primary-blue-dark, 0.8)) ,url(../img/hero2.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 25rem 0;
+    font-size: 1.6em;
+    margin-top: -10rem;
+    transform: skewY(-7deg);
+    & > *{
+        transform: skewY(7deg);
+    }
+}
+
+
+
