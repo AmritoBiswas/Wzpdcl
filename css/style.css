@@ -153,6 +153,9 @@ body {
   background-size: cover;
   border-radius: 3px;
   box-shadow: 0 10rem 20rem rgba(0, 0, 0, 0.2); }
+  .book__form {
+    width: 50%;
+    padding: 6rem; }
 
 .btn:link, .btn:visited {
   display: inline-block;
@@ -316,6 +319,44 @@ body {
   .card__price-value {
     font-size: 6rem;
     font-weight: 300; }
+
+.form__group:not(:last-child) {
+  margin-bottom: 3rem; }
+
+.form__input {
+  padding: 1.5rem 2rem;
+  width: 90%;
+  display: block;
+  border: none;
+  border-radius: 2px;
+  border-bottom: 2px solid transparent;
+  color: inherit;
+  font-family: inherit;
+  background-color: rgba(255, 255, 255, 0.5);
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  transition: all .3s; }
+  .form__input:focus {
+    outline: none;
+    border-bottom: 2px solid #3b82f6; }
+  .form__input::-webkit-input-placeholder {
+    color: #999; }
+  .form__input:focus:invalid {
+    border-bottom: 2px solid red; }
+
+.form__label {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-left: 2rem;
+  margin-top: 0.7rem;
+  display: block;
+  transition: all .3s;
+  text-transform: uppercase; }
+
+.form__input:placeholder-shown + .form__label {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-4rem); }
 
 .row {
   max-width: 114rem;
